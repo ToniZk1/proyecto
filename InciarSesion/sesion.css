@@ -1,0 +1,190 @@
+:root {
+    --primary-color: #D35400; /* Naranja GoDash */
+    --text-main: #333;
+    --text-muted: #777;
+    --bg-light: #F9FAFB;
+    --border-color: #E5E7EB;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-main);
+}
+
+.main-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-section {
+    margin-bottom: 20px;
+}
+
+.brand-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Grid de Roles */
+.role-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.role-card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.role-card.active {
+    border-color: var(--primary-color);
+    background-color: #FFF5F0;
+}
+
+.role-info strong {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.role-info span {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* Colores de Iconos */
+.icon-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.blue-bg { background: #EBF5FF; }
+.orange-bg { background: #FFF7ED; }
+.green-bg { background: #F0FDF4; }
+.purple-bg { background: #FAF5FF; }
+.red-bg { background: #FEF2F2; }
+
+/* Formulario */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    color: #9CA3AF;
+}
+
+input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #D35400;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #B34700;
+}
+
+/* Enlaces inferiores */
+.footer-links {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.forgot-pass {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.register-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-home {
+    margin-top: 20px;
+}
+
+.back-home a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 13px;
+}
